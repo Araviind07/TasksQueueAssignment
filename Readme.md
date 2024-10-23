@@ -71,3 +71,24 @@ Use **Postman** or **cURL** to send requests:
 curl -X POST http://localhost:8000/api/v1/task \
 -H "Content-Type: application/json" \
 -d '{"user_id": "user123"}'
+```
+
+## Redis Setup
+
+You need to set up a Redis instance, either locally or hosted. Some options include:
+
+- **Redis Labs Cloud**
+- **Docker Redis Image**
+
+Ensure you add the correct Redis connection details in the `.env` file:
+
+
+## Future Enhancements
+
+- **User Authentication**: Add authentication and role-based access control for users.
+- **Advanced Task Handling**: Implement retries and job prioritization for more complex use cases.
+- **Frontend Integration**: Build a frontend using React.js to visualize tasks and their progress.
+
+## License
+
+This project is licensed under the MIT License.
